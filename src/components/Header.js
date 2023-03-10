@@ -12,7 +12,7 @@ export const Header = ()=>{
                 <a href="/register">Register</a>
                 <a href="/logout">Logout</a>
                 <a href="/about">About</a>
-                <a href="/hunts">Hunts</a>
+                <a href="/wanted'">Wanted Posters</a>
             </ul>
 
 
