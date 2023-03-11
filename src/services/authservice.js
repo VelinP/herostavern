@@ -7,3 +7,7 @@ export const login = async(email,password)=>{
 export const logout = async()=>{
     return requester.get('http://localhost:3030/users/logout')
 }
+
+export const create = async(data)=>{
+    return requester.post('http://localhost:3030/data/quests', data)
+}

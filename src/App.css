@@ -6,8 +6,8 @@ body {
 .mainheadernav{
   display: flex;
   background-color: rgb(4, 12, 45);
-  border:groove wheat 0.1px;
-  border-radius: 10px;
+  /* border:groove wheat 0.1px; */
+  border-radius: 20px;
   flex-wrap: wrap;
   box-shadow: 10px 10px 10px;
 
@@ -17,7 +17,7 @@ body {
 
 .mainheaderul{
   display: flex;
-  gap: 40px
+  gap: 10px
 
 }
 
@@ -56,17 +56,22 @@ body{
   width: auto;
   margin-left: 35%;
   margin-right: 35%;
-  margin-top: 100px;
+  margin-top: 50px;
   color: wheat;
   box-shadow: 10px 10px 10px  wheat;
   flex-wrap: wrap;
+
+
 }
 
 .buttons{
   border: solid orange;
   border-radius: 25px;
   padding: 7px;
+  
 }
+
+
 
 .submit{
   border: solid wheat;
@@ -120,4 +125,40 @@ body{
     position:relative;
     left: 50px;
     bottom: 22px;
+  }
+
+  .aboutSection{
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(4, 12, 45);
+    margin-left: 25%;
+    margin-right: 25%;
+    align-content: center;
+    border: solid wheat;
+    margin-top: 10%;
+    padding: 20px;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px black;
+  }
+
+  .formcontainercreate{
+    border: solid wheat;
+    border-radius: 40px;
+    background-color: rgb(4, 12, 45);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    width: auto;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 50px;
+    color: wheat;
+    box-shadow: 10px 10px 10px  wheat;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+    
   }

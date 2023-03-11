@@ -9,7 +9,7 @@ export const Logout = ()=>{
     
     logout().then(()=>{
         logoutfunc();
-        navigate('/login')
+        navigate('/')
     })
 
     return(null)
