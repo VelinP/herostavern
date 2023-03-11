@@ -81,7 +81,9 @@ body{
 .signimage{
   width: 40%;
   height: 50%;
-  position: fixed;
+  position: absolute;
+  right: 56%;
+  bottom: 40%;
   
   
 }
