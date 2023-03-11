@@ -1,6 +1,5 @@
-import poster from '../images/poster.png'
 import removesign from '../images/removesign.png'
-import orchuman from '../images/orchuman.png'
+
 
 export const Main = ()=>{
     return(

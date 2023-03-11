@@ -1,5 +1,5 @@
 import favicon from '../images/favicon.ico'
-
+import { Link } from 'react-router-dom'
 export const Header = ()=>{
     return(
 
@@ -7,12 +7,14 @@ export const Header = ()=>{
         <nav className="mainheadernav">
             
             <ul className="mainheaderul">
-            <img src={favicon} href="/"alt="harpoon" className='img'></img>
-                <a href="/login">Login</a>
-                <a href="/register">Register</a>
-                <a href="/logout">Logout</a>
-                <a href="/about">About</a>
-                <a href="/wanted'">Wanted Posters</a>
+            <img src={favicon} to="/" alt="harpoon" className='img'></img>
+                <Link to="/">Home</Link>
+                <Link to="/login">Login</Link>
+                <Link to="/register">Register</Link>
+                <Link to="/logout">Logout</Link>
+                <Link to="/about">About</Link>
+                <Link to="/wanted'">Wanted Posters</Link>
+                
             </ul>
 
 
