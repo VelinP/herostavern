@@ -13,7 +13,7 @@ export const Header = ()=>{
                 <Link to="/register">Register</Link>
                 <Link to="/logout">Logout</Link>
                 <Link to="/about">About</Link>
-                <Link to="/wanted'">Wanted Posters</Link>
+                <Link to="/catalog'">Quests</Link>
                 
             </ul>
 
