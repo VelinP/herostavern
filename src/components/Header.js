@@ -13,21 +13,29 @@ export const Header = ()=>{
             
             <ul className="mainheaderul">
                 <img src={favicon} to="/" alt="harpoon" className='img'></img>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/catalog'">Quests</Link>
-
+                
+                
                 {user.accessToken
                 ?
                 <>
+                    <Link to="/profile">{user.email}</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/create">Give a quest</Link>
+                    <Link to="/catalog'">Quests</Link>
                     <Link to="/logout">Logout</Link>
                 </>
                 :
                 <>
                     <Link to="/login">Login</Link>
                     <Link to="/register">Register</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/catalog'">Quests</Link>
                 </>
                 }
+
+                
               
                 
             </ul>
