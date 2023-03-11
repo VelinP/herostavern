@@ -7,9 +7,10 @@ body {
   display: flex;
   background-color: rgb(4, 12, 45);
   /* border:groove wheat 0.1px; */
-  border-radius: 20px;
+  /* border-radius: 20px; */
   flex-wrap: wrap;
-  box-shadow: 10px 10px 10px;
+  /* box-shadow:0 0 0 5px black, 0 0 0 10px rgb(4, 12, 45); */
+  box-shadow: 0 0 10px wheat,0 0 10px red;
 
   
   
@@ -58,7 +59,7 @@ body{
   margin-right: 35%;
   margin-top: 50px;
   color: wheat;
-  box-shadow: 10px 10px 10px  wheat;
+  box-shadow: 0 0 30px wheat,0 0 30px red;
   flex-wrap: wrap;
 
 
@@ -105,7 +106,7 @@ body{
   color: white;
   display: flex;
   justify-content: center;
-  border:dashed wheat 2px;
+  border:solid wheat 2px;
   background-color: rgb(4, 12, 45);
   align-content: center;
   border-radius: 25px;
@@ -116,7 +117,7 @@ body{
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
-  box-shadow: 10px 10px 10px 10px;
+  box-shadow: 0 0 30px wheat,0 0 30px red;
   }
 
   .scroll{
@@ -141,7 +142,7 @@ body{
     max-width: 50%;
     max-height: 50%;
     border-radius: 25px;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 0 0 30px wheat,0 0 30px red;
   }
 
   .formcontainercreate{
@@ -157,8 +158,26 @@ body{
     margin-right: 35%;
     margin-top: 50px;
     color: wheat;
-    box-shadow: 10px 10px 10px  wheat;
+    box-shadow: 0 0 30px wheat,0 0 30px red;
     flex-wrap: wrap;
     padding-bottom: 2%;
     
+  }
+
+
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .cardcontainer {
+    padding: 2px 16px;
   }

@@ -11,3 +11,7 @@ export const logout = async()=>{
 export const create = async(data)=>{
     return requester.post('http://localhost:3030/data/quests', data)
 }
+
+export const register = async(email,password)=>{
+    return requester.post('http://localhost:3030/users/register', {email,password})
+}
