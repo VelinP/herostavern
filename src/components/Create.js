@@ -1,4 +1,4 @@
-import scroll from '../images/scroll.png'
+// import scroll from '../images/scroll.png'
 import { create } from '../services/authservice.js'
 import { useNavigate } from 'react-router-dom'
 
@@ -29,7 +29,7 @@ export const Create = () =>{
                     placeholder="Give a quest"
                 />
 
-                <label htmlFor="questType">Category:</label>
+                <label htmlFor="questType">Type</label>
                     <input
                     type="text"
                     id="questType"
@@ -37,7 +37,7 @@ export const Create = () =>{
                     placeholder="What type of a quest is it?"
                 />
 
-                <label htmlFor="levelreq">MaxLevel:</label>
+                <label htmlFor="levelreq">Required level</label>
                 <input
                     type="number"
                     id="requiredlevel"
@@ -46,7 +46,7 @@ export const Create = () =>{
                     placeholder={1}
                 />
 
-                <label htmlFor="quest-img">Image:</label>
+                <label htmlFor="quest-img">Picture</label>
                 <input
                     type="text"
                     id="imageUrl"
@@ -54,12 +54,20 @@ export const Create = () =>{
                     placeholder="Add a picture..."
                 />
 
-                <label htmlFor="description">Summary:</label>
-                <textarea name="description" id="description" defaultValue={"Describe your quest"} />
+                <label htmlFor="reward">Reward</label>
+                <input
+                    type="text"
+                    id="reward"
+                    name="reward"
+                    placeholder="Quest reward..."
+                />
+
+                <label htmlFor="description">Description</label>
+                <textarea className="textarea"name="description" id="description" placeholder="Describe your quest" />
                 <input
                     className="btn submit"
                     type="submit"
-                    defaultValue="Give a quest"
+                    defaultValue="Describe..."
                 />
 
             </div>

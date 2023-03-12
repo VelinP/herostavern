@@ -181,3 +181,8 @@ body{
   .cardcontainer {
     padding: 2px 16px;
   }
+
+  textarea{
+    resize: none;
+    width: 52%;
+  }

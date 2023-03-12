@@ -6,7 +6,6 @@ import { Main } from './components/Main';
 import { Routes, Route } from 'react-router-dom';
 import { Register } from './components/Register';
 import { authContext } from './contexts/authcontext';
-import { useState } from 'react';
 import { useLocalStorage } from './hooks/loginhook';
 import { Logout } from './components/Logout';
 import { About } from './components/About';
