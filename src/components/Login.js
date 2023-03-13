@@ -36,7 +36,7 @@ export const Login = () =>{
                     />
                   <label htmlFor="login-pass">Password:</label>
                   <input className="buttons" type="password" id="login-password" name="password" placeholder="  Password" />
-                  <input className="submit" type="submit" defaultValue="Login" />
+                  <input className="submit" type="submit" value="Login" />
                   <img src={scroll} className="scroll" alt="scroll"></img>
                   <p className="field">
                     <span>

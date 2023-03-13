@@ -12,5 +12,4 @@ export const Logout = ()=>{
         navigate('/')
     })
 
-    return(null)
 }

@@ -37,7 +37,7 @@ export const Register = () =>{
                 <input className="buttons" type="password" name="password" id="register-password" placeholder='Password'/>
                 <label htmlFor="con-pass">Confirm Password:</label>
                 <input className="buttons" type="password" name="repass" id="repass" placeholder='Password'/>
-                <input className="btn submit" type="submit" defaultValue="Register" />
+                <input className="btn submit" type="submit" value="Register" />
                 <img src={scroll} className="scroll" alt="scroll"></img>
 
                 <p className="field">

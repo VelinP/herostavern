@@ -10,7 +10,7 @@ export const Create = () =>{
         
 
         const data = Object.fromEntries(new FormData(e.target)) 
-        create(data).then(()=> navigate('/'))
+        create(data).then(()=> navigate('/catalog'))
 
     }
 

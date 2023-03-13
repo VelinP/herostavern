@@ -1,13 +1,16 @@
-export const Quest = () =>{
-    return(
-        <div className="card">
-        <img src="img_avatar.png" alt="quest"/>
-        <div className="cardcontainer">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
-        </div>
-        </div>
+import { Link } from "react-router-dom"
 
+export const Quest = (props) =>{
+    return(
+       <div className="card">
+        <img className="cardimg" src={props.quest.imageUrl} alt="quest" />
+        
+        <h4>Objective: {props.quest.name}</h4>
+        <p>Type: {props.quest.questType}</p>
+        <p><Link to={`/catalog/${props.id}`} >Details</Link></p>
+        
+        </div>
 
     )
 }
+

@@ -10,6 +10,9 @@ import { useLocalStorage } from './hooks/loginhook';
 import { Logout } from './components/Logout';
 import { About } from './components/About';
 import { Create } from './components/Create';
+import { AllQuests } from './components/AllQuests';
+import { Details } from './components/Details';
+
 
 function App() {
   const [authenticate, setauthenticate] = useLocalStorage('auth',{})
@@ -38,6 +41,9 @@ function App() {
           <Route path="logout" element={<Logout/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/create" element={<Create/>}/>
+          <Route path="/catalog" element={<AllQuests/>}/>
+          <Route path="/catalog/:questId" element={<Details/>}/>
+
         </Routes>
 
       </authContext.Provider>

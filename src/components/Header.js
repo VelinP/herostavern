@@ -22,7 +22,7 @@ export const Header = ()=>{
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/create">Give a quest</Link>
-                    <Link to="/catalog'">Quests</Link>
+                    <Link to="/catalog">Quests</Link>
                     <Link to="/logout">Logout</Link>
                 </>
                 :
@@ -31,7 +31,7 @@ export const Header = ()=>{
                     <Link to="/register">Register</Link>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
-                    <Link to="/catalog'">Quests</Link>
+                    <Link to="/catalog">Quests</Link>
                 </>
                 }
 
