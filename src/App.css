@@ -22,7 +22,8 @@ body {
 
 .mainheaderul{
   display: flex;
-  gap: 30px
+  gap: 30px;
+  position: relative;
 
 }
 
@@ -46,8 +47,9 @@ body {
 
 .img{
   width: 50px;
-  height: 30px;
-  position: relative;
+  height: 50px;
+  left: 100%;
+  position: absolute;
   
 }
 
@@ -55,6 +57,7 @@ body{
   margin: 0;
   background-image:url('https://wallpaperaccess.com/full/1886625.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -282,4 +285,23 @@ body{
   padding-bottom: 20%;
   background-color: rgb(4, 12, 45);
 
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(4, 12, 45);
+  color: white;
+  text-align: center;
+  height: 2.5%;
+  border-top: solid black;
+}
+
+.footer p{
+  position: relative;
+  bottom: 9px;
+  color: wheat;
+ 
 }

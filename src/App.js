@@ -12,7 +12,7 @@ import { About } from './components/About';
 import { Create } from './components/Create';
 import { AllQuests } from './components/AllQuests';
 import { Details } from './components/Details';
-
+import { Footer } from './components/Footer';
 
 function App() {
   const [authenticate, setauthenticate] = useLocalStorage('auth',{})
@@ -47,7 +47,9 @@ function App() {
         </Routes>
 
       </authContext.Provider>
-    
+
+      <Footer/>
+
     </div>
   );
 }
