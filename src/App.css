@@ -20,6 +20,10 @@ body {
   
 }
 
+.textarea{
+  resize: none;
+}
+
 .mainheaderul{
   display: flex;
   gap: 30px;
@@ -201,8 +205,8 @@ body{
   display: grid;
   padding:5%;
   margin-top: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
   grid-template-rows:1fr ;
   gap: 15px;
   position: relative;
@@ -219,7 +223,8 @@ body{
   color: wheat;
   opacity: 0.8;
   opacity:0.7;
-
+  margin-left: 15%;
+  margin-right: 15%;
   transition: opacity 0.3s ease;
 }
 
@@ -236,8 +241,9 @@ body{
   left: 70%;
   float: right;
   padding: 5px;
-  width: 10%;
-  height:115px
+  width: 8%;
+  height:122px;
+  box-shadow: 0 0 10px wheat,0 0 30px red;
 }
 
 .cardDiv{
@@ -258,6 +264,7 @@ body{
   color:black;
   border:solid gray;
   background-color: white;
+  padding: 3px;
 }
 
 .detailsimg{
@@ -266,11 +273,12 @@ body{
   border: solid wheat;
   border-radius: 50%;
   padding: 5px;
-  width: 20%;
+  width: 40%;
   margin-top: 20px;
   margin-left: 20px;
-  box-shadow: 0 0 10px wheat,0 0 10px red;
-  
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px wheat,0 0 30px red;  
+  min-height: 600px;
   
   
 }
@@ -280,11 +288,15 @@ body{
   border: solid wheat;
   display: flex;
   margin-top: 40px;
-  margin-right: 40px;
-  margin-left: 40px;
-  padding-bottom: 20%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  
   background-color: rgb(4, 12, 45);
-
+  box-shadow: 0 0 10px wheat,0 0 30px red;
+  position: relative;
+  height: 700px;
+  max-height: 700px;
 }
 
 .footer {
@@ -304,4 +316,57 @@ body{
   bottom: 9px;
   color: wheat;
  
+}
+
+#desch4{
+  background-color: wheat;
+  margin-top: 1px;
+  text-align: center;
+  padding-bottom: 40px;
+  
+}
+
+#detailsdesc{
+  background-color: wheat;
+  font-size: 20px;
+  font-weight: bolder;
+  
+}
+
+#bigquestdetails{
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+
+#requiredlevel{
+  background-color:wheat ;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#reward{
+  background-color: wheat;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.descdiv{
+  border:solid red 3px;
+  position: absolute;
+  padding: 30px;
+  left: 50%;
+  top: 20px;
+  transition: box-shadow 0.3s ease;
+  opacity: 0.8;
+  background-color: wheat;
+  border-radius: 25px;
+  max-width: 30%;
+  min-width: 30%;
+}
+
+.descdiv:hover{
+  box-shadow: 0 0 10px wheat,0 0 100px red;
+  opacity: 1;
 }

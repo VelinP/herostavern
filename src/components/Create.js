@@ -27,6 +27,7 @@ export const Create = () =>{
                     id="title"
                     name="name"
                     placeholder="Give a quest"
+                    maxlength="30"
                 />
 
                 <label htmlFor="questType">Type</label>
