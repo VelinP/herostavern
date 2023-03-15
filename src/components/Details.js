@@ -2,13 +2,20 @@
 import { Link, useParams } from "react-router-dom"
 import { getOne } from "../services/authservice"
 import { useState, useEffect } from "react"
+import { useContext } from "react"
+import { authContext } from "../contexts/authcontext"
 
 export const Details = () =>{
     const {questId} = useParams()
     const [currentquest, setQuest] = useState({})
+    const { user } = useContext(authContext)
+    console.log(user);
 
     useEffect(()=> { getOne(questId).then(quest=> setQuest(quest))},[questId])
     
+
+
+
     return(
         <div className="detailsDiv">
             <img className="detailsimg" src={currentquest.imageUrl} alt="nothing"/>
@@ -23,6 +30,9 @@ export const Details = () =>{
                 {currentquest.description}</p>
             </div>
 
+            {user._id === currentquest._ownerId? 
+            
+            <>
             <Link>
             <button id="editbutton">Edit</button> 
             </Link>
@@ -30,6 +40,11 @@ export const Details = () =>{
             <Link to= {`/catalog/${currentquest._id}/delete`}> 
                 <button id="deletebutton">Delete</button>
             </Link>
+            </> :
+
+            <>
+            </>
+            }
         </div>
 
     )

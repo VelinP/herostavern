@@ -278,7 +278,7 @@ body{
   margin-left: 20px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px wheat,0 0 30px red;  
-  min-height: 600px;
+  min-height: 625px;
   
   
 }
@@ -373,7 +373,7 @@ body{
 
 #deletebutton{
   position: relative;
-  top: 65%;
+  top: 70%;
   left: 190%;
   border: solid orange;
   border-radius: 25px;
@@ -385,7 +385,7 @@ body{
 
 #editbutton{
   position: relative;
-  top: 65%;
+  top: 70%;
   left: 110%;
   border: solid orange;
   border-radius: 25px;
