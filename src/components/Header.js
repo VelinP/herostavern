@@ -5,7 +5,6 @@ import { useContext } from 'react'
 
 export const Header = ()=>{
     const {user} = useContext(authContext)
-    console.log(user)
     return(
 
     

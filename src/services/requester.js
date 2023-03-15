@@ -1,25 +1,25 @@
 import * as authservice from './authservice.js'
 
-async function request(method,url, data){
-    let options = {}
+export const get = async(url) =>{
+    const data = await fetch(url)
+    const readydata = await data.json()
+    return readydata
+}
+
+export const post = async(url, data) =>{
+    const readydata = await fetch(url, {method:'POST', headers:{'content-type': "application.json"}, body: JSON.stringify(data)})
+    return readydata.json()
+}
+
+export const postauth = async(url,data ) =>{
     let token = authservice.GetToken()
-    if(method !== 'GET'){
-        options.method = method
-        options.headers ={'content-type': 'application/json'}
-    }
-    if (token){
-        options.headers ={'X-Authorization': token}
-    }
-
-    options.body = JSON.stringify(data)
-
-    return fetch(url,options).then(res=> res.json())
+    const readydata = await fetch(url, {method:'POST', headers:{'content-type': "application.json", 'X-Authorization': token}, body: JSON.stringify(data)})
+    return readydata.json()
 
 }
 
-export const get = request.bind({}, 'GET')
-export const post = request.bind({}, 'POST')
-export const put = request.bind({}, 'PUT')
-export const del = request.bind({}, 'DELETE')
-export const patch = request.bind({}, 'PATCH')
-
+export const del = async(url) =>{
+    let token = authservice.GetToken()
+    const readydata = await fetch(url, {method:'DELETE', headers:{'content-type': "application.json", 'X-Authorization': token}})
+    return readydata.json()
+}

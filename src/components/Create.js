@@ -27,7 +27,7 @@ export const Create = () =>{
                     id="title"
                     name="name"
                     placeholder="Give a quest"
-                    maxlength="30"
+                    maxLength="30"
                 />
 
                 <label htmlFor="questType">Type</label>
@@ -64,11 +64,12 @@ export const Create = () =>{
                 />
 
                 <label htmlFor="description">Description</label>
-                <textarea className="textarea"name="description" id="description" placeholder="Describe your quest" />
+                <textarea className="textarea"name="description" id="description" placeholder="Describe your quest" maxLength="300"/>
                 <input
                     className="btn submit"
                     type="submit"
                     defaultValue="Describe..."
+                    
                 />
 
             </div>

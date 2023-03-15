@@ -9,7 +9,7 @@ export const AllQuests = () =>{
     {
         getAll().then(
             (allquests)=> 
-            setQuests(allquests))},[])
+            setQuests(allquests)).catch((e)=> console.log(e))},[])
     
       return(
         <div className="griddiv">

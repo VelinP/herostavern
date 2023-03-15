@@ -1,17 +1,14 @@
 
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { getOne } from "../services/authservice"
 import { useState, useEffect } from "react"
 
 export const Details = () =>{
     const {questId} = useParams()
-    console.log(questId)
     const [currentquest, setQuest] = useState({})
 
     useEffect(()=> { getOne(questId).then(quest=> setQuest(quest))},[questId])
     
-    console.log(currentquest);
-
     return(
         <div className="detailsDiv">
             <img className="detailsimg" src={currentquest.imageUrl} alt="nothing"/>
@@ -19,15 +16,20 @@ export const Details = () =>{
             
             
             <div className="descdiv">
-                <h6 id="bigquestdetails">QUEST DETAILS:</h6>
-                <h4 id="desch4" > {currentquest.name}</h4>
-                <p id="requiredlevel" >Required level: {currentquest.levelreq}</p>
-                <p id="reward" >Reward: {currentquest.reward}</p>
+                <h1 id="desch4" > {currentquest.name}</h1>
+                <p id="requiredleveldesc" >Required level: {currentquest.levelreq}</p>
+                <p id="rewarddesc" >Reward: {currentquest.reward}</p>
                 <p id="detailsdesc">
-                {currentquest.description}
-                
-                </p>
+                {currentquest.description}</p>
             </div>
+
+            <Link>
+            <button id="editbutton">Edit</button> 
+            </Link>
+            
+            <Link to= {`/catalog/${currentquest._id}/delete`}> 
+                <button id="deletebutton">Delete</button>
+            </Link>
         </div>
 
     )

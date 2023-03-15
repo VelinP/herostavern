@@ -295,8 +295,8 @@ body{
   background-color: rgb(4, 12, 45);
   box-shadow: 0 0 10px wheat,0 0 30px red;
   position: relative;
-  height: 700px;
-  max-height: 700px;
+  height: 670px;
+  max-height: 670px;
 }
 
 .footer {
@@ -307,7 +307,7 @@ body{
   background-color: rgb(4, 12, 45);
   color: white;
   text-align: center;
-  height: 2.5%;
+  height: 3.5%;
   border-top: solid black;
 }
 
@@ -337,16 +337,15 @@ body{
   font-size: 20px;
   font-weight: bolder;
   text-align: center;
-  /* margin-bottom: 30px; */
 }
 
-#requiredlevel{
+#requiredleveldesc{
   background-color:wheat ;
   font-size: 20px;
   font-weight: bolder;
 }
 
-#reward{
+#rewarddesc{
   background-color: wheat;
   font-size: 20px;
   font-weight: bolder;
@@ -362,11 +361,35 @@ body{
   opacity: 0.8;
   background-color: wheat;
   border-radius: 25px;
-  max-width: 30%;
-  min-width: 30%;
+  
+  max-width: 47%;
+  min-width: 47%;
 }
 
 .descdiv:hover{
   box-shadow: 0 0 10px wheat,0 0 100px red;
   opacity: 1;
+}
+
+#deletebutton{
+  position: relative;
+  top: 65%;
+  left: 190%;
+  border: solid orange;
+  border-radius: 25px;
+  padding: 7px;
+  box-shadow: 0 0 30px wheat,0 0 30px red;
+  width: 200px;
+
+}
+
+#editbutton{
+  position: relative;
+  top: 65%;
+  left: 110%;
+  border: solid orange;
+  border-radius: 25px;
+  padding: 7px;
+  box-shadow: 0 0 30px wheat,0 0 30px red;
+  width: 200px;
 }

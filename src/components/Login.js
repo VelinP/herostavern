@@ -6,7 +6,7 @@ import * as authservice from '../services/authservice.js'
 
 export const Login = () =>{
     const navigate = useNavigate()
-    const {loginfunc} = useContext(authContext)
+    const { loginfunc } = useContext(authContext)
 
     const onSubmit = (e)=>{
         e.preventDefault()

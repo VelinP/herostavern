@@ -1,13 +1,15 @@
 import * as requester from '../services/requester.js'
 
 export const login = async(email,password)=>{
+    debugger;
     return requester.post('http://localhost:3030/users/login', {email,password})
+    
 }
 
 export const logout = async()=>{
     debugger;
     try{
-        return fetch('http://localhost:3030/users/logout',{headers: {'X-Authorization': GetToken()}})
+        return requester.get('http://localhost:3030/users/logout')
     }
     catch(err){
         console.log(err)
@@ -16,7 +18,7 @@ export const logout = async()=>{
 }
 
 export const create = async(data)=>{
-    return requester.post('http://localhost:3030/data/quests', data)
+    return requester.postauth('http://localhost:3030/data/quests', data)
 }
 
 export const register = async(email,password)=>{
