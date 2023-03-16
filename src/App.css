@@ -281,6 +281,7 @@ body{
   min-height: 625px;
   
   
+  
 }
 
 .detailsDiv{
@@ -392,4 +393,73 @@ body{
   padding: 7px;
   box-shadow: 0 0 30px wheat,0 0 30px red;
   width: 200px;
+}
+
+
+
+.homepagecarddiv{
+  margin-top: 160px;
+  display: grid;
+  grid-template-columns: repeat(3,500px);
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: center;
+  background-image: url(https://inkarnate-api-as-production.s3.amazonaws.com/97aFPHAKk5joziR9R4mk6j);
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px wheat,0 0 30px red;
+  margin-left: 30px;
+  margin-right: 60px;
+  border: solid wheat;
+  border-radius: 60px;
+ 
+}
+
+.homepagecardimg{
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 70%;
+
+}
+
+.homepagecardheader{
+  border: solid salmon;
+  background-color: wheat;
+  height: 400px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  margin-top: 100px;
+  font-weight: bolder;
+  position:relative;
+  transition: box-shadow 0.3s ease;
+
+}
+
+.homepagecardheader:hover{
+  box-shadow: 0 0 10px wheat,0 0 30px red;
+
+}
+
+
+#questparagraph{
+  text-align: center;
+  color: wheat;
+  font-size: 50px;
+  
+}
+
+.homepagedetails{
+  position: absolute;
+  bottom: 20px;
+  left: 35%;
+  height: 30px;
+  width: 100px;
+}
+
+.nocontentp{
+  text-align: center;
 }

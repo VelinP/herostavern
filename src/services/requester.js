@@ -23,3 +23,4 @@ export const del = async(url) =>{
     const readydata = await fetch(url, {method:'DELETE', headers:{'content-type': "application.json", 'X-Authorization': token}})
     return readydata.json()
 }
+

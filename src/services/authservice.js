@@ -51,3 +51,10 @@ export const getUser = () =>{
 export const GetToken = ()=>{
     return getUser()?.accessToken
 }
+
+export const get3 = async()=>{
+    const data = await requester.get('http://localhost:3030/data/quests')
+    return data.splice(-3)
+
+
+}

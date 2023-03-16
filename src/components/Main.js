@@ -1,27 +1,21 @@
-import removesign from '../images/removesign.png'
-
+import { Card } from "./Card"
+import { useEffect, useState } from "react"
+import { get3 } from "../services/authservice"
 
 export const Main = ()=>{
-    return(
-        <>
-        <div>
-            <article className='tavernarticle'>
-                The hero's tavern is 
-                a tavern far off into the mountains , where
-                adventurers of all sorts gather to have a drink , have a laugh
-                , sometimes get in a fight, and perhaps earn some gold from bounties...?
-                All are welcome in the Hero's Tavern , so hop on in
-                and have a good time why don't you?
-                
-                
-            <img src={removesign} alt="poster" className='signimage'></img>
-                
-            </article>
-            
-            
+    const [three, setThree] = useState([])
 
-        
+    useEffect(()=> {get3().then(data=> setThree(data))},[])
+    console.log(three);
+    
+    return(
+
+        <div className="main">
+            <h1 id="questparagraph"> Most recent quests:</h1>
+            <div className="homepagecarddiv">
+                {three.length >0 ? three.map(card=> <Card card={card} key={card._id}/>) : <p className="nocontentp">No content</p>}
+            </div>
         </div>
-        </>
+        
     )
 }
