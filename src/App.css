@@ -422,12 +422,13 @@ body{
   width: 100%;
   aspect-ratio: 16/9;
   height: 70%;
+  border-bottom: solid rgb(4, 12, 45)4px
 
 }
 
 .homepagecardheader{
-  border: solid salmon;
-  background-color: wheat;
+  border: solid rgb(4, 12, 45) 5px;
+  background-color: wheat;  
   height: 400px;
   border-radius: 10px;
   width: 300px;
@@ -436,11 +437,12 @@ body{
   font-weight: bolder;
   position:relative;
   transition: box-shadow 0.3s ease;
+  color: solid rgb(4, 12, 45);
 
 }
 
 .homepagecardheader:hover{
-  box-shadow: 0 0 10px wheat,0 0 30px red;
+  box-shadow: 0 0 10px wheat,0 0 40px red;
 
 }
 

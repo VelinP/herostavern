@@ -40,7 +40,9 @@ export const Details = () =>{
             <Link to= {`/catalog/${currentquest._id}/delete`}> 
                 <button id="deletebutton">Delete</button>
             </Link>
-            </> :
+            </> 
+            
+            :
 
             <>
             </>

@@ -6,7 +6,6 @@ export const Main = ()=>{
     const [three, setThree] = useState([])
 
     useEffect(()=> {get3().then(data=> setThree(data))},[])
-    console.log(three);
     
     return(
 

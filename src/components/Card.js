@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 export const Card = (props) =>{
    
@@ -11,7 +11,7 @@ export const Card = (props) =>{
         </div>
         
         <div className="homepagecardfooter">
-        <button className="homepagedetails">Details</button>
+        <Link to={`/catalog/${props.card._id}`}><button className="homepagedetails">Details</button></Link>
         </div>
 
     </div>
