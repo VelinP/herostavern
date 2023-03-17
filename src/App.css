@@ -301,7 +301,7 @@ body{
   padding: 5px;
   width: 8%;
   height:122px;
-  box-shadow: 0 0 10px wheat,0 0 30px red;
+  border: solid wheat
 }
 
 .cardDiv{
@@ -340,9 +340,7 @@ body{
    */
 
    overflow: hidden;
-   display: block;
-   width: 40%;
-   border: solid black;
+   width: 50%;
    aspect-ratio: 16/9;
    height: 100%;
   
@@ -350,8 +348,7 @@ body{
 }
 
 .detailsDiv{
-  /* box-shadow: 0 0 10px wheat,0 0 10px red;
-  border: solid wheat; */
+  
   display: flex;
   margin-top: 40px;
   margin-right: 5%;
@@ -362,8 +359,18 @@ body{
   position: relative;
   height: 670px;
   max-height: 670px;
-  border: solid black;
+  border :solid black
 }
+
+.descdiv{
+  padding: 30px;
+  top: 20px;
+  background-color: wheat;
+  width: 50%;
+ 
+}
+
+
 
 .footer {
   position: fixed;
@@ -396,6 +403,7 @@ body{
   background-color: wheat;
   font-size: 20px;
   font-weight: bolder;
+  margin-top: 300px;
   
 }
 
@@ -417,18 +425,6 @@ body{
   font-weight: bolder;
 }
 
-.descdiv{
-  position: absolute;
-  padding: 30px;
-  left: 50%;
-  top: 20px;
-  transition: box-shadow 0.3s ease;
-  background-color: wheat;
-  border-radius: 25px;
-  
-  max-width: 47%;
-  min-width: 47%;
-}
 
 
 #deletebutton{

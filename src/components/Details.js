@@ -17,6 +17,7 @@ export const Details = () =>{
 
 
     return(
+        <div className="maindetails">
         <div className="detailsDiv">
             <img className="detailsimg" src={currentquest.imageUrl} alt="nothing"/>
             
@@ -26,7 +27,7 @@ export const Details = () =>{
                 <h1 id="desch4" > {currentquest.name}</h1>
                 <p id="requiredleveldesc" >Required level: {currentquest.levelreq}</p>
                 <p id="rewarddesc" >Reward: {currentquest.reward}</p>
-                <p id="detailsdesc">{currentquest.description}</p>
+                <p id="detailsdesc">Quest description:   {currentquest.description}</p>
 
                     {user._id === currentquest._ownerId? 
                         
@@ -50,7 +51,7 @@ export const Details = () =>{
 
             
         </div>
-
+        </div>
     )
 
 
