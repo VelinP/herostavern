@@ -26,27 +26,29 @@ export const Details = () =>{
                 <h1 id="desch4" > {currentquest.name}</h1>
                 <p id="requiredleveldesc" >Required level: {currentquest.levelreq}</p>
                 <p id="rewarddesc" >Reward: {currentquest.reward}</p>
-                <p id="detailsdesc">
-                {currentquest.description}</p>
+                <p id="detailsdesc">{currentquest.description}</p>
+
+                    {user._id === currentquest._ownerId? 
+                        
+                        <>
+                        <Link>
+                        <button className="submitbutton">Edit</button> 
+                        </Link>
+                        
+                        <Link to= {`/catalog/${currentquest._id}/delete`}> 
+                            <button className="submitbutton">Delete</button>
+                        </Link>
+                        </> 
+                        
+                        :
+
+                        <>
+                        </>
+                    }
+
             </div>
 
-            {user._id === currentquest._ownerId? 
             
-            <>
-            <Link>
-            <button id="editbutton">Edit</button> 
-            </Link>
-            
-            <Link to= {`/catalog/${currentquest._id}/delete`}> 
-                <button id="deletebutton">Delete</button>
-            </Link>
-            </> 
-            
-            :
-
-            <>
-            </>
-            }
         </div>
 
     )

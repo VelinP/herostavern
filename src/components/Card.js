@@ -11,7 +11,7 @@ export const Card = (props) =>{
         </div>
         
         <div className="homepagecardfooter">
-        <Link to={`/catalog/${props.card._id}`}><button className="homepagedetails">Details</button></Link>
+        <Link to={`/catalog/${props.card._id}`}><button className="submitbutton">Details</button></Link>
         </div>
 
     </div>

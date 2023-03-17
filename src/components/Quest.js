@@ -7,8 +7,7 @@ export const Quest = (props) =>{
         
         <h4>Objective: {props.quest.name}</h4>
         <p>Type: {props.quest.questType}</p>
-        <p><Link to={`/catalog/${props.id}`} >Details</Link></p>
-        
+        <Link to={`/catalog/${props.id}`} id="detailsbutton">Details</Link>
         </div>
 
     )

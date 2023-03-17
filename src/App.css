@@ -67,7 +67,7 @@ body{
 
 
 .formcontainer{
-  border: solid wheat;
+  border: solid black;
   border-radius: 40px;
   background-color: rgb(4, 12, 45);
   display: flex;
@@ -79,40 +79,107 @@ body{
   margin-right: 35%;
   margin-top: 50px;
   color: wheat;
-  box-shadow: 0 0 30px wheat,0 0 30px red;
   flex-wrap: wrap;
   align-items: center;
   margin-top: 10%;
   padding-top: 30px;
   padding-bottom: 30px;
-  opacity:0.9;
-
-  transition: opacity 0.3s ease;
-}
-
-.formcontainer:hover{
-  opacity:1
-}
-
-.submit{
-  border: solid orange;
-  border-radius: 25px;
-  padding: 7px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 0 30px wheat,0 0 30px red;
-}
-
-.submit:hover{
-  background-color: gray;
 }
 
 
 
-.submit{
-  border: solid wheat;
-  border-radius: 25px;
+
+
+/* CSS */
+.submitbutton {
+  /* background-color: white;
+  border-radius: 8px;
+  border-width: 0;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 10px;
+  list-style: none;
+  padding: 10px 12px;
+  margin-top: 10px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation; */
+}
+
+
+
+
+
+
+
+/* CSS */
+.submitbutton {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  justify-content: center;
+  position: relative;
+  transition: all 250ms;
+  touch-action: manipulation;
   margin-top: 10px;
 }
+
+.submitbutton:hover,
+.submitbutton:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.submitbutton:hover {
+  transform: translateY(-1px);
+}
+
+.submitbutton:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .spanremove{
   text-decoration: none;
@@ -180,7 +247,6 @@ body{
   }
 
   .formcontainercreate{
-    border: solid wheat;
     border-radius: 40px;
     background-color: rgb(4, 12, 45);
     display: flex;
@@ -193,7 +259,6 @@ body{
     margin-right: 35%;
     margin-top: 7%;
     color: wheat;
-    box-shadow: 0 0 30px wheat,0 0 30px red;
     flex-wrap: wrap;
     padding-bottom: 2%;
     
@@ -217,20 +282,13 @@ body{
   font-size: 15px;
   margin: 10px;
   background-color: rgb(4, 12, 45);
-  box-shadow: 0 0 30px wheat,0 0 30px red;
-  border-radius: 25px;
-  border: solid wheat;
+  /* box-shadow: 0 0 30px wheat,0 0 30px red; */
   color: wheat;
-  opacity: 0.8;
-  opacity:0.7;
   margin-left: 15%;
   margin-right: 15%;
-  transition: opacity 0.3s ease;
+  height: 95%;
 }
 
-.card:hover{
-  opacity: 1;
-}
 
 
 .cardimg{
@@ -268,7 +326,7 @@ body{
 }
 
 .detailsimg{
-  max-width: 40%;
+  /* max-width: 40%;
   max-height: 40%;
   border: solid wheat;
   border-radius: 50%;
@@ -279,14 +337,21 @@ body{
   margin-bottom: 20px;
   box-shadow: 0 0 10px wheat,0 0 30px red;  
   min-height: 625px;
-  
+   */
+
+   overflow: hidden;
+   display: block;
+   width: 40%;
+   border: solid black;
+   aspect-ratio: 16/9;
+   height: 100%;
   
   
 }
 
 .detailsDiv{
-  box-shadow: 0 0 10px wheat,0 0 10px red;
-  border: solid wheat;
+  /* box-shadow: 0 0 10px wheat,0 0 10px red;
+  border: solid wheat; */
   display: flex;
   margin-top: 40px;
   margin-right: 5%;
@@ -294,10 +359,10 @@ body{
   margin-top: 5%;
   
   background-color: rgb(4, 12, 45);
-  box-shadow: 0 0 10px wheat,0 0 30px red;
   position: relative;
   height: 670px;
   max-height: 670px;
+  border: solid black;
 }
 
 .footer {
@@ -353,13 +418,11 @@ body{
 }
 
 .descdiv{
-  border:solid red 3px;
   position: absolute;
   padding: 30px;
   left: 50%;
   top: 20px;
   transition: box-shadow 0.3s ease;
-  opacity: 0.8;
   background-color: wheat;
   border-radius: 25px;
   
@@ -367,10 +430,6 @@ body{
   min-width: 47%;
 }
 
-.descdiv:hover{
-  box-shadow: 0 0 10px wheat,0 0 100px red;
-  opacity: 1;
-}
 
 #deletebutton{
   position: relative;
@@ -395,6 +454,10 @@ body{
   width: 200px;
 }
 
+.homepagecardbody{
+  margin-top: 10px;
+}
+
 
 
 .homepagecarddiv{
@@ -408,11 +471,9 @@ body{
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 0 10px wheat,0 0 30px red;
   margin-left: 30px;
   margin-right: 60px;
-  border: solid wheat;
-  border-radius: 60px;
+  border: solid black 5px;
  
 }
 
@@ -426,18 +487,21 @@ body{
 
 }
 
+
+
 .homepagecardheader{
   border: solid rgb(4, 12, 45) 5px;
   background-color: wheat;  
-  height: 400px;
+  height: 70%;
+  width: 70%;
+  max-width: 70%;
+  max-height: 70%;
   border-radius: 10px;
-  width: 300px;
+  
   text-align: center;
   margin-top: 100px;
-  font-weight: bolder;
-  position:relative;
+  font-weight: 550;
   transition: box-shadow 0.3s ease;
-  color: solid rgb(4, 12, 45);
 
 }
 
@@ -451,6 +515,12 @@ body{
   text-align: center;
   color: wheat;
   font-size: 50px;
+  text-shadow:
+  -1px 0px 0px black,
+  1px 0px 0px black,
+  0px -1px 0px black,
+  0px 1px 0px black;color: wheat;
+
   
 }
 
@@ -464,4 +534,22 @@ body{
 
 .nocontentp{
   text-align: center;
+}
+
+#detailsbutton{
+margin-left: 30px;
+align-items: center;
+background-color: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: .25rem;
+box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+color: rgba(0, 0, 0, 0.85);
+font-size: 16px;
+justify-content: center;
+position: relative;
+transition: all 250ms;
+touch-action: manipulation;
+margin-top: 10px;
+
+
 }
