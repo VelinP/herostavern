@@ -399,13 +399,7 @@ body{
   
 }
 
-#detailsdesc{
-  background-color: wheat;
-  font-size: 20px;
-  font-weight: bolder;
-  margin-top: 300px;
-  
-}
+
 
 #bigquestdetails{
   font-size: 20px;
@@ -457,7 +451,7 @@ body{
 
 
 .homepagecarddiv{
-  margin-top: 160px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3,500px);
   grid-auto-flow: row;
@@ -548,4 +542,25 @@ touch-action: manipulation;
 margin-top: 10px;
 
 
+}
+
+#questdesch1{
+  margin-top: 20%;
+  text-align: center;
+}
+
+#detailsdesc{
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: rgb(4, 12, 45);
+  
+  
+}
+
+.descriptionDiv{
+  border: solid black;
+  background-color: rgb(4, 12, 45);
+  border-radius: 20px;
+  padding: 20px;
 }
