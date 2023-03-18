@@ -27,7 +27,12 @@ export const Details = () =>{
                 <h1 id="desch4" > {currentquest.name}</h1>
                 <p id="requiredleveldesc" >Required level: {currentquest.levelreq}</p>
                 <p id="rewarddesc" >Reward: {currentquest.reward}</p>
-                <p id="detailsdesc">Quest description:   {currentquest.description}</p>
+                <h1 id="questdesch1">Quest description:</h1>
+                
+                <div className="descriptionDiv">
+                <p id="detailsdesc">{currentquest.description}</p>
+                </div>
+
 
                     {user._id === currentquest._ownerId? 
                         

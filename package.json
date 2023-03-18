@@ -35,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This is my project for the web module in Softuni.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": []
 }
