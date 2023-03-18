@@ -24,3 +24,8 @@ export const del = async(url) =>{
     return readydata.json()
 }
 
+export const put = async(url,data) =>{
+    let token = authservice.GetToken()
+    const readydata = await fetch(url, {method:'PUT', headers:{'content-type': "application.json", 'X-Authorization': token}, body: JSON.stringify(data)})
+    return readydata.json()
+}

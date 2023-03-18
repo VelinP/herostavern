@@ -58,3 +58,8 @@ export const get3 = async()=>{
 
 
 }
+
+export const edit = async(id, info)=>{
+    const data = await requester.put(`http://localhost:3030/data/quests/${id}`, info)
+    return data
+}

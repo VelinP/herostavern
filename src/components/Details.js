@@ -4,16 +4,20 @@ import { getOne } from "../services/authservice"
 import { useState, useEffect } from "react"
 import { useContext } from "react"
 import { authContext } from "../contexts/authcontext"
+import { EditForm } from "./Editform"
 
 export const Details = () =>{
     const {questId} = useParams()
     const [currentquest, setQuest] = useState({})
     const { user } = useContext(authContext)
-    console.log(user);
+    const [isClicked , setIsClicked] = useState(false)
 
     useEffect(()=> { getOne(questId).then(quest=> setQuest(quest))},[questId])
     
-
+    const edithandler = ()=>{
+        setIsClicked(true)
+    }
+    
 
 
     return(
@@ -33,12 +37,13 @@ export const Details = () =>{
                 <p id="detailsdesc">{currentquest.description}</p>
                 </div>
 
+                {isClicked && <EditForm id={questId} setIsClicked={setIsClicked} setQuest={setQuest} />}
 
                     {user._id === currentquest._ownerId? 
                         
                         <>
                         <Link>
-                        <button className="submitbutton">Edit</button> 
+                        <button onClick={edithandler} className="submitbutton" >Edit</button> 
                         </Link>
                         
                         <Link to= {`/catalog/${currentquest._id}/delete`}> 

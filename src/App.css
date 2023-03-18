@@ -564,3 +564,26 @@ margin-top: 10px;
   border-radius: 20px;
   padding: 20px;
 }
+
+.formcontainercreatedetails{
+  border: solid black;
+  border-radius: 40px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  width: auto;
+  
+  margin-top: 50px;
+  color: wheat;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  position: absolute;
+  bottom: 200px;
+  left: 40%;
+  color: black;
+}
+
