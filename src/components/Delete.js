@@ -7,6 +7,6 @@ export const Delete = () =>{
     const {questId} = useParams()
     const navigate = useNavigate()
 
-    useEffect(()=>{deleteOne(questId).then(()=> navigate('/catalog'))})
+    useEffect(()=>{deleteOne(questId).then(()=> navigate('/'))})
     return(null)
 }

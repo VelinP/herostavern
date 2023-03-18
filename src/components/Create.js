@@ -8,8 +8,23 @@ export const Create = () =>{
     const obsubmit = (e) =>{
         e.preventDefault()
         
+        const currentdata = new FormData(e.target)
+        const data = Object.fromEntries(currentdata)
 
-        const data = Object.fromEntries(new FormData(e.target)) 
+        const name = currentdata.get('name')
+        const type= currentdata.get('questType')
+        const levelreq = currentdata.get('levelreq')
+        const imageurl = currentdata.get('imageUrl')
+        const reward = currentdata.get('reward')
+        const description = currentdata.get('description')
+
+        if(name === "" || type === "" || levelreq === "" || imageurl === "" || description === "" || reward === ""){
+            alert('You have missing fields')
+            return
+        }
+
+
+
         create(data).then(()=> navigate('/catalog'))
 
     }

@@ -1,10 +1,9 @@
 import favicon from '../images/favicon.ico'
 import { Link } from 'react-router-dom'
-import { authContext } from '../contexts/authcontext'
-import { useContext } from 'react'
+import { getUser } from '../services/authservice'
 
 export const Header = ()=>{
-    const {user} = useContext(authContext)
+    const currentuser = getUser()
     return(
 
     
@@ -14,10 +13,10 @@ export const Header = ()=>{
                 <img src={favicon} to="/" alt="harpoon" className='img'></img>
                 
                 
-                {user.accessToken
+                {currentuser
                 ?
                 <>
-                    <Link to="/profile">{user.email}</Link>
+                    <Link to="/profile">{currentuser.email}</Link>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/create">Give a quest</Link>

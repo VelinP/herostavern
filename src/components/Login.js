@@ -12,6 +12,12 @@ export const Login = () =>{
         e.preventDefault()
         const {email, password} = Object.fromEntries(new FormData(e.target))
         
+        if(email === "" || password === ""){
+          alert('You have missing fields')
+          return
+        }
+
+
         authservice.login(email,password).then(data=>{
           loginfunc(data);
           navigate('/')

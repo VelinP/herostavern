@@ -13,7 +13,11 @@ export const Register = () =>{
     const onsubmit = (e)=>{
         e.preventDefault()
         const { email ,password , repass } = Object.fromEntries(new FormData(e.target))
-        console.log(email,password,repass);
+        
+        if(email === "" || password === "" || repass === ""){
+            alert('You have missing fields')
+            return
+        }
 
         register(email,password).then(()=>{logoutfunc(); navigate('/login')})
 

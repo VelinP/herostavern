@@ -27,8 +27,8 @@ export const EditForm = (props) =>{
             
         <form id="create" onSubmit={onsubmit}>
         <div className="formcontainercreatedetails">
-            <button onClick={unclick}>X</button>
-            <h1>Create Quest</h1>
+            <button id="editformbutton" onClick={unclick}>X</button>
+            <h1>Edit Quest</h1>
                 <label htmlFor="quest">Quest name</label>
                 <input
                 type="text"
@@ -45,7 +45,7 @@ export const EditForm = (props) =>{
                 id="questType"
                 name="questType"
                 placeholder="What type of a quest is it?"
-                defaultValue={data.type}
+                defaultValue={data.questType}
 
             />
 

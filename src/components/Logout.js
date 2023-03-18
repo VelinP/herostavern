@@ -9,6 +9,7 @@ export const Logout = ()=>{
     
     logout().then(()=>{
         logoutfunc();
+        localStorage.clear()
         navigate('/')
     })
 

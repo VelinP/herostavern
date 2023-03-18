@@ -31,12 +31,14 @@ export const Details = () =>{
                 <h1 id="desch4" > {currentquest.name}</h1>
                 <p id="requiredleveldesc" >Required level: {currentquest.levelreq}</p>
                 <p id="rewarddesc" >Reward: {currentquest.reward}</p>
+                <p id="typedesc" >Type of Quest: {currentquest.questType}</p>
+
+
+
                 <h1 id="questdesch1">Quest description:</h1>
                 
                 <div className="descriptionDiv">
                 <p id="detailsdesc">{currentquest.description}</p>
-                </div>
-
                 {isClicked && <EditForm id={questId} setIsClicked={setIsClicked} setQuest={setQuest} />}
 
                     {user._id === currentquest._ownerId? 
@@ -56,6 +58,9 @@ export const Details = () =>{
                         <>
                         </>
                     }
+                </div>
+
+              
 
             </div>
 

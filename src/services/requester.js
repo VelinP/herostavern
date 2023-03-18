@@ -20,7 +20,7 @@ export const postauth = async(url,data ) =>{
 
 export const del = async(url) =>{
     let token = authservice.GetToken()
-    const readydata = await fetch(url, {method:'DELETE', headers:{'content-type': "application.json", 'X-Authorization': token}})
+    const readydata = await fetch(url, {method:'DELETE', headers:{'X-Authorization': token}})
     return readydata.json()
 }
 
