@@ -6,16 +6,7 @@ export const login = async(email,password)=>{
     
 }
 
-export const logout = async()=>{
-    debugger;
-    try{
-        return requester.get('http://localhost:3030/users/logout')
-    }
-    catch(err){
-        console.log(err)
-    }
-    
-}
+
 
 export const create = async(data)=>{
     return requester.postauth('http://localhost:3030/data/quests', data)
@@ -62,4 +53,23 @@ export const get3 = async()=>{
 export const edit = async(id, info)=>{
     const data = await requester.put(`http://localhost:3030/data/quests/${id}`, info)
     return data
+}
+
+export const userinfo = async()=>{
+    const token = GetToken()
+    const data = await fetch('http://localhost:3030/users/me/', {headers:{'X-Authorization': token}})
+    const readydata = await data.json()
+    return readydata
+}
+
+export const logout = async()=>{
+    try{
+        const token = GetToken()
+        const data = await fetch('http://localhost:3030/users/logout/', {headers:{'X-Authorization': token}})
+        return data
+    }
+    catch(err){
+        console.log(err)
+    }
+    
 }

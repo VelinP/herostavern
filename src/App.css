@@ -336,12 +336,16 @@ body{
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 5%;
-  
   background-color: rgb(4, 12, 45);
   position: relative;
   height: 670px;
   max-height: 670px;
-  border :solid black
+  border :solid black;
+}
+
+.maindetails{
+  border-radius: 20px;
+
 }
 
 .descdiv{

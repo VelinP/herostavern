@@ -1,10 +1,10 @@
 import { Card } from "./Card"
 import { useEffect, useState } from "react"
 import { get3 } from "../services/authservice"
+import { userinfo } from "../services/authservice"
 
 export const Main = ()=>{
     const [three, setThree] = useState([])
-
     useEffect(()=> {get3().then(data=> setThree(data))},[])
     
     return(

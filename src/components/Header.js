@@ -13,10 +13,10 @@ export const Header = ()=>{
                 <img src={favicon} to="/" alt="harpoon" className='img'></img>
                 
                 
-                {currentuser
+                {currentuser?._id
                 ?
                 <>
-                    <Link to="/profile">{currentuser.email}</Link>
+                    <Link to={`/profile/${currentuser._id}`}>{currentuser.email}</Link>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/create">Give a quest</Link>

@@ -14,7 +14,7 @@ export const Register = () =>{
         e.preventDefault()
         const { email ,password , repass } = Object.fromEntries(new FormData(e.target))
         
-        if(email === "" || password === "" || repass === ""){
+        if(email === "" || password === "" || repass === "" ){
             alert('You have missing fields')
             return
         }
@@ -37,6 +37,16 @@ export const Register = () =>{
                     name="email"
                     placeholder="Nudash@abv.bg"
                 />
+
+                {/* <label htmlFor="profilepic">Profile Picture:</label>
+                <input className="buttons"
+                    type="profilepic"
+                    id="profilepic"
+                    name="profilepic"
+                    placeholder="Avatar"
+                /> */}
+
+
                 <label htmlFor="pass">Password:</label>
                 <input className="buttons" type="password" name="password" id="register-password" placeholder='Password'/>
                 <label htmlFor="con-pass">Confirm Password:</label>
