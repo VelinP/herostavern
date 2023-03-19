@@ -2,15 +2,16 @@
 import { Link, useParams } from "react-router-dom"
 import { getOne } from "../services/authservice"
 import { useState, useEffect } from "react"
-import { useContext } from "react"
-import { authContext } from "../contexts/authcontext"
+// import { useContext } from "react"
+// import { authContext } from "../contexts/authcontext"
 import { EditForm } from "./Editform"
+import { getUser } from "../services/authservice"
 
 export const Details = () =>{
     const {questId} = useParams()
     const [currentquest, setQuest] = useState({})
-    const { user } = useContext(authContext)
     const [isClicked , setIsClicked] = useState(false)
+    const user = getUser()
 
     useEffect(()=> { getOne(questId).then(quest=> setQuest(quest))},[questId])
     

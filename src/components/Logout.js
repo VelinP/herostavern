@@ -6,11 +6,11 @@ import { logout } from "../services/authservice"
 export const Logout = ()=>{
     const navigate = useNavigate()
     const {logoutfunc} = useContext(authContext)
-    
-    useEffect(()=>{logout().then(res=>{
-        logoutfunc();
-        localStorage.clear()
-        navigate('/')
-    }).catch((err)=> {console.log(err.message)})})
 
+    useEffect(()=>{
+        logout().then(()=>{
+        logoutfunc()
+        localStorage.clear()
+        navigate('/')}
+        )},[logoutfunc,navigate])
 }

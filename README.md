@@ -11,4 +11,4 @@ It is made using React.js for Frontend and the Softuni practise server for backe
     -Register
     -Delete
     -Create:
-        The data created is known as 'Quests'. Quests feature objectives , a reward , a description, and who created the quest.
+    The data created is known as 'Quests'. Quests feature objectives , a reward , a description, and who created the quest.

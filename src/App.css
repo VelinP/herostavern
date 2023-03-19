@@ -594,3 +594,9 @@ margin-top: 10px;
 .formcontainercreatedetails label{
   font-weight:bolder;
 }
+
+.quests{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
