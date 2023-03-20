@@ -40,9 +40,10 @@ export const Details = () =>{
                 
                 <div className="descriptionDiv">
                 <p id="detailsdesc">{currentquest.description}</p>
+                
                 {isClicked && <EditForm id={questId} setIsClicked={setIsClicked} setQuest={setQuest} />}
 
-                    {user._id === currentquest._ownerId? 
+                    {user?._id === currentquest._ownerId? 
                         
                         <>
                         <Link>
