@@ -225,7 +225,6 @@ body{
     max-width: 50%;
     max-height: 50%;
     border-radius: 25px;
-    box-shadow: 0 0 30px wheat,0 0 30px red;
   }
 
   .formcontainercreate{
@@ -598,4 +597,9 @@ margin-top: 10px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+
+.buttondiv{
+  display: flex;
+  justify-content: center;
 }

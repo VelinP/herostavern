@@ -45,7 +45,7 @@ export const Details = () =>{
 
                     {user?._id === currentquest._ownerId? 
                         
-                        <>
+                        <div className="buttondiv">
                         <Link>
                         <button onClick={edithandler} className="submitbutton" >Edit</button> 
                         </Link>
@@ -53,7 +53,7 @@ export const Details = () =>{
                         <Link to= {`/catalog/${currentquest._id}/delete`}> 
                             <button className="submitbutton">Delete</button>
                         </Link>
-                        </> 
+                        </div>
                         
                         :
 
