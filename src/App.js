@@ -13,6 +13,7 @@ import { AllQuests } from './components/AllQuests';
 import { Details } from './components/Details';
 import { Footer } from './components/Footer';
 import { Delete } from './components/Delete';
+import { Profile} from './components/Profile'
 
 function App() {
   const [authenticate, setauthenticate] = useLocalStorage('auth',{})
@@ -44,6 +45,7 @@ function App() {
           <Route path="/catalog" element={<AllQuests/>}/>
           <Route path="/catalog/:questId" element={<Details/>}/>
           <Route path="/catalog/:questId/delete" element={<Delete/>}/>
+          <Route path ="/profile/:userId" element={<Profile/>} />
 
         </Routes>
 

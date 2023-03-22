@@ -20,6 +20,8 @@ export const getAll = async() =>{
 
 }
 
+
+
 export const getOne = async(id)=>{
     return requester.get(`http://localhost:3030/data/quests/${id}`)
 }

@@ -603,3 +603,36 @@ margin-top: 10px;
   display: flex;
   justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profilediv{
+  display: grid;
+  grid-template-columns: repeat(3,500px);
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: center;
+  background-image: url(https://inkarnate-api-as-production.s3.amazonaws.com/97aFPHAKk5joziR9R4mk6j);
+  /* background-color:salmon; */
+  margin-left: 60px;
+  margin-right: 60px;
+  border: solid black 5px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.profileh1{
+  color: wheat;
+  text-align: center;
+
+}
