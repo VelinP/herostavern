@@ -1,8 +1,9 @@
 import { getUser } from "../services/authservice"
 import { useParams } from "react-router-dom"
-import { Card } from "./Card"
+import { ProfileCard } from "./Profilecard"
 import { useState, useEffect } from "react"
 import { getAll } from "../services/authservice"
+import x from '../images/x.png'
 
 export const Profile = () =>{
     const {userId} = useParams()
@@ -16,8 +17,11 @@ export const Profile = () =>{
             allquests=> 
             
             {
-            // allquests.filter(quest => quest._ownerId === userId)
-            setCards(allquests)
+
+                debugger;
+            let truecards = allquests.filter(quest => quest._ownerId === user._id)
+            console.log(truecards)
+            setCards(truecards)
         
             }
             
@@ -34,7 +38,7 @@ export const Profile = () =>{
             
             <div>
             <div className="profilediv">
-                {cards.map(card=> <Card key={card._id} card={card}/> )}
+                {cards.length >0 ?cards.map(card=> <ProfileCard key={card._id} card={card}/> ) :  <img src= {x} className="quests" alt='nothing'></img>}
             </div>
 
         </div>

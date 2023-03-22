@@ -616,23 +616,54 @@ margin-top: 10px;
 
 
 
+
+
+
 .profilediv{
   display: grid;
-  grid-template-columns: repeat(3,500px);
+  grid-template-columns: repeat(3,450px);
   grid-auto-flow: row;
   justify-content: center;
   justify-items: center;
   background-image: url(https://inkarnate-api-as-production.s3.amazonaws.com/97aFPHAKk5joziR9R4mk6j);
-  /* background-color:salmon; */
   margin-left: 60px;
   margin-right: 60px;
   border: solid black 5px;
   margin-bottom: 60px;
   padding: 20px;
+  gap: 60px;
 }
+
 
 .profileh1{
   color: wheat;
   text-align: center;
 
+}
+
+.profilepagecardimg{
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 70%;
+  border-bottom: solid rgb(4, 12, 45)4px
+
+}
+.profilepagecardheader{
+  border: solid rgb(4, 12, 45) 5px;
+  background-color: wheat;  
+  height: 400px;
+  width: 70%;
+  max-width: 70%;
+  max-height: 500px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 550;
+  transition: box-shadow 0.3s ease;
+
+}
+
+.profilepagecardbody{
+  margin-top: 10px;
 }
