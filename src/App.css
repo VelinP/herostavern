@@ -10,10 +10,8 @@ body {
 .mainheadernav{
   display: flex;
   background-color: rgb(4, 12, 45);
-  /* border:groove wheat 0.1px; */
-  /* border-radius: 20px; */
+  
   flex-wrap: wrap;
-  /* box-shadow:0 0 0 5px black, 0 0 0 10px rgb(4, 12, 45); */
   box-shadow: 0 0 10px wheat,0 0 10px red;
   
   
@@ -102,7 +100,6 @@ body{
 
 
 
-/* CSS */
 .submitbutton {
   align-items: center;
   background-color: #FFFFFF;
@@ -263,7 +260,6 @@ body{
   font-size: 15px;
   margin: 10px;
   background-color: rgb(4, 12, 45);
-  /* box-shadow: 0 0 30px wheat,0 0 30px red; */
   color: wheat;
   margin-left: 15%;
   margin-right: 15%;
@@ -307,19 +303,6 @@ body{
 }
 
 .detailsimg{
-  /* max-width: 40%;
-  max-height: 40%;
-  border: solid wheat;
-  border-radius: 50%;
-  padding: 5px;
-  width: 40%;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px wheat,0 0 30px red;  
-  min-height: 625px;
-   */
-
   overflow: hidden;
   width: 50%;
   aspect-ratio: 16/9;
@@ -549,7 +532,6 @@ margin-top: 10px;
 }
 
 .descriptionDiv{
-  /* border: solid black; */
   background-color: rgb(4, 12, 45);
   padding: 20px;
   position:absolute;
@@ -599,6 +581,12 @@ margin-top: 10px;
   margin-right: auto;
 }
 
+.quests1{
+  display: flex;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
 .buttondiv{
   display: flex;
   justify-content: center;
@@ -638,7 +626,7 @@ margin-top: 10px;
 .profileh1{
   color: wheat;
   text-align: center;
-
+  padding-bottom: 80px;
 }
 
 .profilepagecardimg{

@@ -17,18 +17,15 @@ export const Profile = () =>{
             allquests=> 
             
             {
-
-                debugger;
-            let truecards = allquests.filter(quest => quest._ownerId === user._id)
+            let truecards = allquests.filter(quest => quest._ownerId === userId)
             console.log(truecards)
             setCards(truecards)
         
             }
             
 
-            ).catch((e)=> console.log(e))},[])
+            ).catch((e)=> console.log(e))},[userId])
 
-    console.log(cards)
     return (
 
          
@@ -37,9 +34,12 @@ export const Profile = () =>{
             <h1 className="profileh1"> Welcome,{user.email}</h1>
             
             <div>
-            <div className="profilediv">
-                {cards.length >0 ?cards.map(card=> <ProfileCard key={card._id} card={card}/> ) :  <img src= {x} className="quests" alt='nothing'></img>}
-            </div>
+
+            {cards.length >0 
+            ?
+            <div className="profilediv">{cards.map(card=> <ProfileCard key={card._id} card={card}/>)}</div> 
+            :  
+            <img src= {x} className="quests" alt='nothing'></img>}
 
         </div>
 

@@ -16,7 +16,10 @@ export const AllQuests = () =>{
     
       return(
         <div className="griddiv">
-            {quests.length >0 ? quests.map(quest=> <Quest key={quest._id} id={quest._id} quest={quest}/>) : <img src= {x} className="quests" alt='nothing'></img>}
+            {
+            quests.length > 0 
+            ? quests.map(quest=> <Quest key={quest._id} id={quest._id} quest={quest}/>) 
+            : <img src= {x} className="quests" alt='nothing'></img>}
             
 
         </div>
