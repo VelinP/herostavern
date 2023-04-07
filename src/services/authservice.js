@@ -1,33 +1,58 @@
 import * as requester from '../services/requester.js'
 
 export const login = async(email,password)=>{
-    return requester.post('http://localhost:3030/users/login', {email,password})
+    try{
+        return requester.post('http://localhost:3030/users/login', {email,password})
+    }catch(error){
+        console.log('login error')
+    }
     
 }
 
 
 
 export const create = async(data)=>{
-    return requester.postauth('http://localhost:3030/data/quests', data)
+    try{
+        return requester.postauth('http://localhost:3030/data/quests', data)
+    }catch{
+        console.log('create error')
+    }
 }
 
 export const register = async(email,password)=>{
-    return requester.post('http://localhost:3030/users/register', {email,password})
+    try{
+        return requester.post('http://localhost:3030/users/register', {email,password})
+    }catch(err){
+        console.log(err)
+    }
 }
 
 export const getAll = async() =>{
+   try{
     return requester.get('http://localhost:3030/data/quests')
 
+   }
+   catch(err){
+    console.log(err)
+   }
 }
 
 
 
 export const getOne = async(id)=>{
-    return requester.get(`http://localhost:3030/data/quests/${id}`)
+    try{
+        return requester.get(`http://localhost:3030/data/quests/${id}`)
+    }catch(err){
+        console.log(err)
+    }
 }
 
 export const deleteOne = async(id) =>{
-    return requester.del(`http://localhost:3030/data/quests/${id}`)
+    try{
+        return requester.del(`http://localhost:3030/data/quests/${id}`)
+    }catch(err){
+        console.log(err)
+    }
 }
 
 export const getUser = () =>{
@@ -46,8 +71,12 @@ export const GetToken = ()=>{
 
 export const get3 = async()=>{
     
-    const data = await requester.get('http://localhost:3030/data/quests')
-    return data.splice(-3)
+    try{
+        const data = await requester.get('http://localhost:3030/data/quests')
+        return data.splice(-3)
+    }catch(err){
+        console.log(err)
+    }
     
     
     
@@ -56,15 +85,26 @@ export const get3 = async()=>{
 }
 
 export const edit = async(id, info)=>{
-    const data = await requester.put(`http://localhost:3030/data/quests/${id}`, info)
-    return data
+    try{
+        const data = await requester.put(`http://localhost:3030/data/quests/${id}`, info)
+        return data
+    }catch(err){
+        console.log(err)
+    }
 }
 
 export const userinfo = async()=>{
-    const token = GetToken()
-    const data = await fetch('http://localhost:3030/users/me/', {headers:{'X-Authorization': token}})
-    const readydata = await data.json()
-    return readydata
+   try
+   {
+        const token = GetToken()
+        const data = await fetch('http://localhost:3030/users/me/', {headers:{'X-Authorization': token}})
+        const readydata = await data.json()
+        return readydata
+   }
+   
+   catch(err){
+        console.log(err)
+   }
 }
 
 export const logout = async()=>{

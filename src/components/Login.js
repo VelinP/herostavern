@@ -18,10 +18,14 @@ export const Login = () =>{
         }
 
 
-        authservice.login(email,password).then(data=>{
+        authservice.login(email,password)
+        .then(
+          data=>{
+
           loginfunc(data);
           navigate('/')
-          })
+          
+        });
 
       }
 

@@ -30,7 +30,7 @@ export const Profile = () =>{
          
         <div className="main">
         
-            <h1 className="profileh1"> Welcome,{user.email}</h1>
+            <h1 className="profileh1"> Welcome, {user.email}</h1>
             
             <div>
 
