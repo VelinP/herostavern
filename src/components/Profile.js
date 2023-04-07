@@ -18,7 +18,6 @@ export const Profile = () =>{
             
             {
             let truecards = allquests.filter(quest => quest._ownerId === userId)
-            console.log(truecards)
             setCards(truecards)
         
             }
@@ -35,7 +34,7 @@ export const Profile = () =>{
             
             <div>
 
-            {cards.length >0 
+            {cards.length > 0 
             ?
             <div className="profilediv">{cards.map(card=> <ProfileCard key={card._id} card={card}/>)}</div> 
             :  

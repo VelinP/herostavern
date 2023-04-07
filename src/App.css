@@ -239,6 +239,7 @@ body{
     color: wheat;
     flex-wrap: wrap;
     padding-bottom: 2%;
+    border: solid black;
     
     
   }
@@ -363,6 +364,7 @@ body{
   text-align: center;
   padding-bottom: 40px;
   padding-right: 50px;
+  text-decoration:underline;
   
 }
 
@@ -428,7 +430,7 @@ body{
   justify-items: center;
   background-image: url(https://inkarnate-api-as-production.s3.amazonaws.com/97aFPHAKk5joziR9R4mk6j);
   height: 600px;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-left: 60px;
   margin-right: 60px;
@@ -517,7 +519,7 @@ margin-top: 10px;
   text-align: center;
   position:absolute;
   bottom: 30%;
-  right: 20%;
+  right: 19%;
 }
 
 
@@ -613,7 +615,8 @@ margin-top: 10px;
   grid-auto-flow: row;
   justify-content: center;
   justify-items: center;
-  background-image: url(https://inkarnate-api-as-production.s3.amazonaws.com/97aFPHAKk5joziR9R4mk6j);
+  background-image: url(https://external-preview.redd.it/Z_D-oZ0k1Q4-DrTgcfJA6ZYJ6Hf4J-L7A70G5RL6Cvg.jpg?auto=webp&s=2421c2c9f8860864b3ef8e436aa98f1ca78b1a88);
+  background-size: 100% 100%;
   margin-left: 60px;
   margin-right: 60px;
   border: solid black 5px;
@@ -626,7 +629,7 @@ margin-top: 10px;
 .profileh1{
   color: wheat;
   text-align: center;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .profilepagecardimg{
@@ -654,4 +657,11 @@ margin-top: 10px;
 
 .profilepagecardbody{
   margin-top: 10px;
+}
+
+
+
+.profilepagecardheader:hover{
+  box-shadow: 0 0 10px wheat,0 0 40px red;
+
 }
