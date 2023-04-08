@@ -73,7 +73,9 @@ export const get3 = async()=>{
     
     try{
         const data = await requester.get('http://localhost:3030/data/quests')
-        return data.splice(-3)
+        if(data.length >0){
+            return data.splice(-3)
+        }
     }catch(err){
         console.log(err)
     }

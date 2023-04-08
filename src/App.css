@@ -495,7 +495,12 @@ body{
 }
 
 .nocontentp{
-  text-align: center;
+  font-size: 100px;
+  color: white;
+  position: relative;
+  left: 500px;
+  top:150px;
+  font-weight: 700;
 }
 
 #detailsbutton{

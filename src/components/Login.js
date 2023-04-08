@@ -42,16 +42,18 @@ export const Login = () =>{
                       type="email"
                       id="email"
                       name="email"
-                      placeholder="  Nudash@abv.bg"
+                      placeholder=" Nudash@abv.bg"
                     />
                   <label htmlFor="login-pass">Password:</label>
-                  <input className="buttons" type="password" id="login-password" name="password" placeholder="  Password" />
+                  <input className="buttons" type="password" id="login-password" name="password" placeholder=" Password" />
                   <input className="submitbutton" type="submit" value="Login" />
                   <img src={scroll} className="scroll" alt="scroll"></img>
+                  
                   <p className="field">
                     <span>
                       If you don't have profile click <a className="spanremove" href="/register">here</a>
                     </span>
+                  
                   </p>
               </div>
           </form>

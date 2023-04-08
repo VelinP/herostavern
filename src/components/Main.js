@@ -11,7 +11,13 @@ export const Main = ()=>{
         <div className="main">
             <h1 id="questparagraph"> Most recent quests:</h1>
             <div className="homepagecarddiv">
-                {three.length >0 ? three.map(card=> <Card card={card} key={card._id}/>) : <p className="nocontentp">No content</p>}
+                {
+                
+                three?.length >0
+                ? three.map(card=> <Card card={card} key={card._id}/>) 
+                : <h1 className="nocontentp">No quests</h1>
+                
+                }
             </div>
         </div>
         

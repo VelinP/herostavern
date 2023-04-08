@@ -29,11 +29,10 @@ function App() {
   
   return (
     <div className="App">
-      <authContext.Provider value={{loginfunc,logoutfunc, user:authenticate}}>
-      
       <Header/>
       
-      
+      <authContext.Provider value={{loginfunc,logoutfunc, user:authenticate}}>
+    
         <Routes>
 
           <Route path="/login" element={<Login/>}/>
