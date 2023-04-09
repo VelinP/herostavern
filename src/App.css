@@ -113,6 +113,8 @@ body{
   transition: all 250ms;
   touch-action: manipulation;
   margin-top: 10px;
+  cursor: pointer;
+
 }
 
 .submitbutton:hover,
@@ -401,6 +403,8 @@ body{
   padding: 7px;
   box-shadow: 0 0 30px wheat,0 0 30px red;
   width: 200px;
+  cursor: pointer;
+
 
 }
 
@@ -413,6 +417,8 @@ body{
   padding: 7px;
   box-shadow: 0 0 30px wheat,0 0 30px red;
   width: 200px;
+  cursor: pointer;
+
 }
 
 .homepagecardbody{
@@ -504,19 +510,21 @@ body{
 }
 
 #detailsbutton{
-margin-left: 30px;
-align-items: center;
-background-color: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
-border-radius: .25rem;
-box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-color: rgba(0, 0, 0, 0.85);
-font-size: 16px;
-justify-content: center;
-position: relative;
-transition: all 250ms;
-touch-action: manipulation;
-margin-top: 10px;
+  margin-left: 30px;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  justify-content: center;
+  position: relative;
+  transition: all 250ms;
+  touch-action: manipulation;
+  margin-top: 10px;
+  cursor: pointer;
+
 
 
 }
@@ -577,6 +585,7 @@ margin-top: 10px;
   background-color: black;
   border: solid black 0.3px;
   color: white;
+  cursor: pointer;
 }
 
 .formcontainercreatedetails label{
@@ -597,7 +606,7 @@ margin-top: 10px;
 
 .buttondiv{
   display: flex;
-  justify-content: center;
+  justify-content:center;
 }
 
 

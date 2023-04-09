@@ -1,15 +1,11 @@
 import scroll from '../images/scroll.png'
 import { register } from '../services/authservice'
 import { useNavigate } from 'react-router-dom'
-import { useContext } from 'react'
-import { authContext } from '../contexts/authcontext'
 
 
 export const Register = () =>{
     const navigate = useNavigate()
-    const { logoutfunc } = useContext(authContext)
-
-
+    
     const onsubmit = (e)=>{
         e.preventDefault()
         const { email ,password , repass } = Object.fromEntries(new FormData(e.target))
@@ -19,7 +15,7 @@ export const Register = () =>{
             return
         }
 
-        register(email,password).then(()=>{logoutfunc(); navigate('/login')})
+        register(email,password).then(()=>{navigate('/login')})
 
 
     }
