@@ -19,7 +19,9 @@ function App() {
   const [authenticate, setauthenticate] = useLocalStorage('auth',{})
   
   const loginfunc = (data)=>{
-    setauthenticate(data)
+    if(data){
+      setauthenticate(data)
+    }
   }
 
   const logoutfunc = ()=>{

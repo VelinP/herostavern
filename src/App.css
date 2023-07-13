@@ -42,7 +42,7 @@ body {
 }
 
 .mainheaderul a:hover{
-  box-shadow: 0 0 10px wheat,0 0 30px red;
+  box-shadow: 0 0 30px wheat,0 0 30px red;
   border-radius: 20px;
   background-color: orange;
 }
